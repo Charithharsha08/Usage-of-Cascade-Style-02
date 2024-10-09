@@ -40,19 +40,19 @@ div{
         top: calc(100% - 150px);
         left: 0;
         background-color: pink;
-        transform: rotate(-180deg);
+        transform: rotate(180deg);
     }
     50%{
         top: 0%;
         left: 0%;
         background-color: orange;
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
     62.5%{
         top: calc(100% - 150px);
         left: 0;
         background-color: pink;
-        transform: rotate(-180deg);
+        transform: rotate(180deg);
     }
     75%{
         top: calc(100% - 150px);
