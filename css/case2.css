@@ -48,6 +48,10 @@ body{
     transform: translate(-50%, -50%);
     color: white;
 }
+
+.sub-div:hover{
+    cursor: pointer;
+}
 .sub-div:hover .main-div{
      animation: rotate 1s linear infinite;
 }
