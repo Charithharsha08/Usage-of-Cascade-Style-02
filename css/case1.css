@@ -2,7 +2,6 @@
     margin: 0%;
 }
 body{
-    background-color: aquamarine;
 }
 
 .box{
@@ -34,12 +33,16 @@ img{
 .box:hover{
     width: 400px;
     height: 100px;
+    transition: all 1s ease-in-out 0.ms;
+
 }
 
 .box:hover h3{
     font-size: 40px;
     opacity: 1;
     color: white;
+    transition: all 1s ease-in-out 0.2s;
+
 }
 .box:hover .menu-item{
     width: 400px;
@@ -47,5 +50,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 1s ease-in-out 0.2s;
 
-} 
+
+}
