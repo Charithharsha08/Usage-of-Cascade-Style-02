@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Case 4</title>
-    <link rel="stylesheet" href="/css/case4.css">
-</head>
-<body>
- <div class="center-buble"></div> 
- <div class="container"></div>
+    <link rel="stylesheet" href="/css/case4.css" />
+  </head>
+  <body>
+    <div class="center-buble"></div>
+    <div class="container"></div>
 
- <script>
-    const container = document.querySelector('.container');
+    <script>
+      const container = document.querySelector(".container");
 
-    container.addEventListener('click', function (e) {
-        const circle = document.createElement('div');
-        circle.classList.add('circle');
+      container.addEventListener("click", function (e) {
+        const circle = document.createElement("div");
+        circle.classList.add("circle");
 
         const x = e.clientX;
         const y = e.clientY;
-        circle.style.left = `${x - 10}px`; 
-        circle.style.top = `${y - 10}px`;  
+        circle.style.left = `${x - 10}px`;
+        circle.style.top = `${y - 10}px`;
 
         container.appendChild(circle);
 
         setTimeout(() => {
-            circle.remove();
+          circle.remove();
         }, 2000);
-    });
-</script>
-
-</body>
+      });
+    </script>
+  </body>
 </html>

@@ -1,61 +1,59 @@
-*{
-    margin: 0%;
+* {
+  margin: 0%;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body>.center-buble{
-    width: 1px;
-    height: 1px;
-    border: 4px solid red;
-    animation: water-drop 2s infinite;
-    border-radius: 100%;
+body > .center-buble {
+  width: 1px;
+  height: 1px;
+  border: 4px solid red;
+  animation: water-drop 2s infinite;
+  border-radius: 100%;
 }
 @keyframes water-drop {
-
-    from{
-       width: 1px;
-       height: 1px;
-    }
-    to{
-       width: 300px;
-       height: 300px;
-       opacity: 0;
-    }
-    
+  from {
+    width: 1px;
+    height: 1px;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
 
 .container {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    cursor: pointer;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .circle {
-    position: absolute;
-    border: 1px solid rgba(0, 150, 255, 0.7);
-    border-radius: 50%;
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-    transform: scale(0);
-    animation: expand-fade 2s ease-out forwards;
+  position: absolute;
+  border: 1px solid rgba(0, 150, 255, 0.7);
+  border-radius: 50%;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  transform: scale(0);
+  animation: expand-fade 2s ease-out forwards;
 }
 
 @keyframes expand-fade {
-    0% {
-        transform: scale(0); 
-        opacity: 1; 
-    }
-    100% {
-        transform: scale(5); 
-        opacity: 0; 
-    }
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
 }
