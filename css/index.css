@@ -11,13 +11,18 @@ body {
   height: 100vh;
 }
 h1 {
+  display: inline-block;
+  overflow: hidden;
   position: absolute;
   top: 8%;
   left: 9%;
   color: white;
   margin-top: 2%;
   text-transform: uppercase;
-  font-size: 56px;
+  font-size: 3.6rem;
+  border-right: 0.15em solid rgb(241, 65, 65);
+  white-space: nowrap;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 .card {
   margin: 6%;
@@ -82,5 +87,22 @@ a {
     box-shadow: 0px 0px 20px 1px rgb(255, 255, 255);
     font-size: 0.7rem;
     background-color: black;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(241, 65, 65);
   }
 }
